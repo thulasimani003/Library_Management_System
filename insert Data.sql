@@ -1,3 +1,4 @@
+-- Insert values into each members table
 INSERT INTO members(member_id, member_name, member_address, reg_date) 
 VALUES
 ('C101', 'Alice Johnson', '123 Main St', '2021-05-15'),
