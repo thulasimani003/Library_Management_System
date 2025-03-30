@@ -1,4 +1,4 @@
-Got it! Here's the updated **README.md** without bold formatting for table names:  
+
 
 ---
 
