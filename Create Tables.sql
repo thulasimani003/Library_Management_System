@@ -1,11 +1,15 @@
+-- Creating the Database
 create database Library_Management_System;
 use Library_Management_System;
 
+-- creating the table Branch
 create table branch(
 branch_id varchar(30) primary key,
 manager_id varchar(30),
 branch_address varchar(60),
 contact_no varchar(30));
+
+-- creating the table books
 create table books(
 isbn varchar(50) primary key,
 book_title varchar(50),
@@ -15,12 +19,14 @@ status varchar(50),
 author varchar(50),	
 publisher varchar(50));
 
+-- creating the table Members
 CREATE table members(
 member_id varchar(50) primary key,
 member_name varchar(50),
 member_address varchar(50),
 reg_date date);
 
+-- creating the table return_status
 create table return_status(
 return_id VARCHAR(10) PRIMARY KEY,
             issued_id VARCHAR(30),
@@ -28,14 +34,16 @@ return_id VARCHAR(10) PRIMARY KEY,
             return_date DATE,
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn));
-            
+
+-- creating the table employees
 create table employees(emp_id varchar(30) primary key,
 	emp_name varchar(30),
 	position varchar(30),
 	salary decimal(10,2),
 	branch_id varchar(30),
     foreign key (branch_id) references branch(branch_id));
-            
+
+-- creating the table issued_status
 create table issued_status(
 issued_id varchar(30) primary key,
 issued_member_id varchar(30),
