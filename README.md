@@ -7,7 +7,6 @@
 # 📚 Library Management System (SQL)
 
 This project is a Library Management System built using SQL. It helps manage books, members, employees, and transactions in a library. The database includes tables for book records, member details, issuance and return statuses, and employee management.
-
 ---
 
 ## 🏛️ Database Tables
