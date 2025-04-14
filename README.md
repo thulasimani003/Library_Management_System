@@ -8,7 +8,7 @@
 **Intermediate**
 
 ## 🧠 Database Used:
-`library_db`
+`Library_Management_System`
 ![image](https://github.com/user-attachments/assets/b93c9983-bf29-467e-acc9-cdeb7b3c8402)
 
 ---
